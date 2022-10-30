@@ -59,7 +59,9 @@ body{
     font-size: 0.7rem;
     color: var(--lighting-color);
 }
-
+.jeanette > .quote, .kira > .quote{
+    color: var(--very-dark-grayish-blue);
+}
 .bold{
     margin-top: 1rem;
     margin-bottom: 1rem;
