@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&display=swap');
 :root{
     --moderate-violet: hsl(263, 55%, 52%);
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
@@ -16,25 +15,96 @@
 }
 
 body{
-    font-size: 13px;
+    scroll-behavior: smooth;
+    font-size: 18px;
     background-color: var(--light-grayish-blue);
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .container{
-    border: 1px solid #000;
-    margin: 10rem 18rem 10rem;
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-rows: 20rem 20rem;
+    position: absolute;
+    width: 80rem;
+    margin: 5rem;
 }
-
 .card{
-    border: 1px solid lightblue;
+    background-color: var(--white);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    color: white;
 }
-
+.card > p{
+    color: var(--lighting-color);
+}
 .card-header{
     display: flex;
+    align-items: center;
+}
+.card-img{
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.name{
+    font-size: 0.7rem;
+    display: block;
+    font-weight: 500;
 }
 
-.card-img{
-    border-radius: 50%;
-    border: 0.1rem solid var(--moderate-violet);
+.sub-title{
+    font-size: 0.7rem;
+    color: var(--lighting-color);
+}
+
+.bold{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quote{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--very-dark-grayish-blue);
+}
+
+.daniel{
+    grid-row: 1;
+    grid-column: span 2;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: right 5rem;
+    background-color: var(--moderate-violet);
+    color: var(--white);
+}
+
+.jonathan{
+    grid-row: 1 ;
+    grid-column: 3;
+    background-color: var(--very-dark-grayish-blue);
+    color: white;
+}
+.jeanette{
+    grid-column:1;
+    grid-row: 2;
+    background-color: var(--white);
+    color:var(--very-dark-grayish-blue);
+    box-shadow: 0.3px 0.3px 0.7px black;
+    box-shadow: 3px 3px 10px var(--lighting-color);
+}
+.patrick{
+    grid-row: 2;
+    grid-column: 3;
+    grid-column: span 2;
+    background-color: var(--very-dark-blackish-blue);
+}
+.kira{
+    grid-row: span 2;
+    grid-column: 4;
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+    box-shadow: 3px 3px 10px var(--lighting-color);
 }
