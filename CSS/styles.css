@@ -74,7 +74,7 @@ body{
 .daniel{
     grid-row: 1;
     grid-column: span 2;
-    background-image: url(/images/bg-pattern-quotation.svg);
+    background-image: url(./images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-x: right 5rem;
     background-color: var(--moderate-violet);
