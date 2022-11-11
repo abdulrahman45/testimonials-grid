@@ -23,7 +23,6 @@ body{
 }
 
 .container{
-    border: 1px solid #000;
     display: grid;
     grid-template-columns: 20rem 20rem 20rem 20rem;
     grid-template-rows: 20rem 20rem;
@@ -81,13 +80,13 @@ body{
     .card{
         padding: 2rem;
         margin: 1rem auto;
-        width: 60%;
+        width: 30rem;
     }
 }
 @media(max-width: 640px){
     .card{
         margin: 1rem auto;
-        width: 30rem;
+        width: 100%;
         padding: 2rem;
     }
 }
@@ -141,7 +140,7 @@ body{
 .daniel{
     grid-row: 1;
     grid-column: span 2;
-    background-image: url(./images/bg-pattern-quotation.svg);
+    background-image: url("../images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
     background-position-x: right 5rem;
     background-color: var(--moderate-violet);
